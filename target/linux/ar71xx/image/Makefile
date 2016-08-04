@@ -311,9 +311,9 @@ $(Device/tplink-nolzma)
   IMAGE_SIZE := 7936k
 endef
 
-define Device/tplink-4mlzma
+define Device/tplink-8mlzma
 $(Device/tplink)
-  TPLINK_FLASHLAYOUT := 4Mlzma
+  TPLINK_FLASHLAYOUT := 8mlzma
   IMAGE_SIZE := 3904k
 endef
 
@@ -388,7 +388,7 @@ endef
 TARGET_DEVICES += tl-wdr6500-v2
 
 define Device/tl-wdr3320-v2
-$(Device/tplink-4mlzma)
+$(Device/tplink-8mlzma)
   BOARDNAME = TL-WDR3320-v2
   DEVICE_PROFILE = TLWDR3320V2
   TPLINK_HWID := 0x33200002
@@ -589,7 +589,7 @@ endef
 TARGET_DEVICES += onion-omega
 
 define Device/tl-mr10u-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR10U
     DEVICE_PROFILE := TLMR10U
     TPLINK_HWID := 0x00100101
@@ -597,7 +597,7 @@ define Device/tl-mr10u-v1
 endef
 
 define Device/tl-mr11u-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR11U
     DEVICE_PROFILE := TLMR11U
     TPLINK_HWID := 0x00110101
@@ -605,7 +605,7 @@ define Device/tl-mr11u-v1
 endef
 
 define Device/tl-mr11u-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR11U
     DEVICE_PROFILE := TLMR11U
     TPLINK_HWID := 0x00110102
@@ -613,7 +613,7 @@ define Device/tl-mr11u-v2
 endef
 
 define Device/tl-mr12u-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR13U
     DEVICE_PROFILE := TLMR12U
     TPLINK_HWID := 0x00120101
@@ -621,7 +621,7 @@ define Device/tl-mr12u-v1
 endef
 
 define Device/tl-mr13u-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR13U
     DEVICE_PROFILE := TLMR13U
     TPLINK_HWID := 0x00130101
@@ -630,7 +630,7 @@ endef
 TARGET_DEVICES += tl-mr10u-v1 tl-mr11u-v1 tl-mr11u-v2 tl-mr12u-v1 tl-mr13u-v1
 
 define Device/tl-mr3020-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR3020
     DEVICE_PROFILE := TLMR3020
     TPLINK_HWID := 0x30200001
@@ -638,7 +638,7 @@ define Device/tl-mr3020-v1
 endef
 
 define Device/tl-mr3040-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR3040
     DEVICE_PROFILE := TLMR3040
     TPLINK_HWID := 0x30400001
@@ -646,7 +646,7 @@ define Device/tl-mr3040-v1
 endef
 
 define Device/tl-mr3040-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR3040-v2
     DEVICE_PROFILE := TLMR3040
     TPLINK_HWID := 0x30400002
@@ -661,7 +661,7 @@ define Device/tl-mr3220-v1
 endef
 
 define Device/tl-mr3220-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR3220-v2
     DEVICE_PROFILE := TLMR3220
     TPLINK_HWID := 0x32200002
@@ -676,7 +676,7 @@ define Device/tl-mr3420-v1
 endef
 
 define Device/tl-mr3420-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-MR3420-v2
     DEVICE_PROFILE := TLMR3420
     TPLINK_HWID := 0x34200002
@@ -684,7 +684,7 @@ endef
 TARGET_DEVICES += tl-mr3020-v1 tl-mr3040-v1 tl-mr3040-v2 tl-mr3220-v1 tl-mr3220-v2 tl-mr3420-v1 tl-mr3420-v2
 
 define Device/tl-wr703n-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR703N
     DEVICE_PROFILE := TLWR703
     TPLINK_HWID := 0x07030101
@@ -700,7 +700,7 @@ define Device/tl-wr710n-v1
 endef
 
 define Device/tl-wr710n-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR710N
     DEVICE_PROFILE := TLWR710
     TPLINK_HWID := 0x07100002
@@ -717,7 +717,7 @@ define Device/tl-wr710n-v2.1
 endef
 
 define Device/tl-wr720n-v3
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR720N-v3
     DEVICE_PROFILE := TLWR720
     TPLINK_HWID := 0x07200103
@@ -725,7 +725,7 @@ define Device/tl-wr720n-v3
 endef
 
 define Device/tl-wr720n-v4
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR720N-v3
     DEVICE_PROFILE := TLWR720
     TPLINK_HWID := 0x07200104
@@ -734,7 +734,7 @@ endef
 TARGET_DEVICES += tl-wr703n-v1 tl-wr710n-v1 tl-wr710n-v2 tl-wr710n-v2.1 tl-wr720n-v3 tl-wr720n-v4
 
 define Device/tl-wr340g-v7
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR740N-v5
     DEVICE_PROFILE := TLWR340
     TPLINK_HWID := 0x03400007
@@ -742,21 +742,21 @@ define Device/tl-wr340g-v7
 endef
 
 define Device/tl-wr740n-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR740
     TPLINK_HWID := 0x07400001
 endef
 
 define Device/tl-wr740n-v3
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR740
     TPLINK_HWID := 0x07400003
 endef
 
 define Device/tl-wr740n-v4
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR741ND-v4
     DEVICE_PROFILE := TLWR740
     TPLINK_HWID := 0x07400004
@@ -764,7 +764,7 @@ define Device/tl-wr740n-v4
 endef
 
 define Device/tl-wr740n-v5
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR741ND-v4
     DEVICE_PROFILE := TLWR740
     TPLINK_HWID := 0x07400005
@@ -772,7 +772,7 @@ define Device/tl-wr740n-v5
 endef
 
 define Device/tl-wr740n-v5-cn
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR740N-v5
     DEVICE_PROFILE := TLWR740
     TPLINK_HWID := 0x07400005
@@ -780,28 +780,28 @@ define Device/tl-wr740n-v5-cn
 endef
 
 define Device/tl-wr740n-v6
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR841N-v9
     DEVICE_PROFILE := TLWR740
     TPLINK_HWID := 0x07400006
 endef
 
 define Device/tl-wr741nd-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR741
     TPLINK_HWID := 0x07410001
 endef
 
 define Device/tl-wr741nd-v2
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR741
     TPLINK_HWID := 0x07410001
 endef
 
 define Device/tl-wr741nd-v4
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR741ND-v4
     DEVICE_PROFILE := TLWR741
     TPLINK_HWID := 0x07410004
@@ -809,7 +809,7 @@ define Device/tl-wr741nd-v4
 endef
 
 define Device/tl-wr741n-v4-cn
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR740N-v5
     DEVICE_PROFILE := TLWR741
     TPLINK_HWID := 0x07410004
@@ -817,7 +817,7 @@ define Device/tl-wr741n-v4-cn
 endef
 
 define Device/tl-wr741nd-v5
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR741ND-v4
     DEVICE_PROFILE := TLWR741
     TPLINK_HWID := 0x07400005
@@ -825,7 +825,7 @@ define Device/tl-wr741nd-v5
 endef
 
 define Device/tl-wr742n-v5
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR742N-v5
     DEVICE_PROFILE := TLWR742
     TPLINK_HWID := 0x07420005
@@ -841,14 +841,14 @@ endef
 TARGET_DEVICES += tl-wr810n
 
 define Device/tl-wr743nd-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR743
     TPLINK_HWID := 0x07430001
 endef
 
 define Device/tl-wr743nd-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR741ND-v4
     DEVICE_PROFILE := TLWR743
     TPLINK_HWID := 0x07430002
@@ -856,7 +856,7 @@ define Device/tl-wr743nd-v2
 endef
 
 define Device/tl-wr745n-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR742N-v5
     DEVICE_PROFILE := TLWR745
     TPLINK_HWID := 0x07450002
@@ -865,7 +865,7 @@ endef
 TARGET_DEVICES += tl-wr340g-v7 tl-wr740n-v1 tl-wr740n-v3 tl-wr740n-v4 tl-wr740n-v5 tl-wr740n-v5-cn tl-wr740n-v6 tl-wr741nd-v1 tl-wr741nd-v2 tl-wr741nd-v4 tl-wr741n-v4-cn tl-wr741nd-v5 tl-wr742n-v5 tl-wr743nd-v1 tl-wr743nd-v2 tl-wr745n-v2
 
 define Device/tl-wr841-v1.5
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR841N-v1.5
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410002
@@ -873,7 +873,7 @@ define Device/tl-wr841-v1.5
 endef
 
 define Device/tl-wr841nd-v3
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR941ND
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410003
@@ -881,42 +881,42 @@ define Device/tl-wr841nd-v3
 endef
 
 define Device/tl-wr841-v5
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410005
 endef
 
 define Device/tl-wr841-v7
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR841N-v7
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410007
 endef
 
 define Device/tl-wr841-v8
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR841N-v8
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410008
 endef
 
 define Device/tl-wr841-v9
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR841N-v9
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410009
 endef
 
 define Device/tl-wr841-v10
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR841N-v9
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08410010
 endef
 
 define Device/tl-wr841-v11
-   $(Device/tplink-4mlzma)
+   $(Device/tplink-8mlzma)
    BOARDNAME := TL-WR841N-v9
    DEVICE_PROFILE := TLWR841
    TPLINK_HWID := 0x08410011
@@ -937,14 +937,14 @@ define Device/tl-wr842n-v2
 endef
 
 define Device/tl-wr843nd-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR841N-v8
     DEVICE_PROFILE := TLWR843
     TPLINK_HWID := 0x08430001
 endef
 
 define Device/tl-wr847n-v8
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR841N-v8
     DEVICE_PROFILE := TLWR841
     TPLINK_HWID := 0x08470008
@@ -952,7 +952,7 @@ endef
 TARGET_DEVICES += tl-wr841-v1.5 tl-wr841-v3 tl-wr841-v5 tl-wr841-v7 tl-wr841-v8 tl-wr841-v9 tl-wr841-v10 tl-wr841-v11 tl-wr842n-v1 tl-wr842n-v2 tl-wr843nd-v1 tl-wr847n-v8
 
 define Device/tl-wr882n-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR882N-v1
     DEVICE_PROFILE := TLWR882
     TPLINK_HWID := 0x08820001
@@ -960,7 +960,7 @@ endef
 TARGET_DEVICES += tl-wr882n-v1
 
 define Device/tl-wr941nd-v2
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR941ND
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410002
@@ -968,7 +968,7 @@ define Device/tl-wr941nd-v2
 endef
 
 define Device/tl-wr941nd-v3
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR941ND
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410002
@@ -976,21 +976,21 @@ define Device/tl-wr941nd-v3
 endef
 
 define Device/tl-wr941nd-v4
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WR741ND
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410004
 endef
 
 define Device/tl-wr941nd-v5
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR941ND-v5
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410005
 endef
 
 define Device/tl-wr941nd-v6
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR941ND-v6
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410006
@@ -998,14 +998,14 @@ endef
 
 # Chinese version (unlike European) is similar to the TL-WDR3500
 define Device/tl-wr941nd-v6-cn
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR941N-v6
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410006
 endef
 
 define Device/tl-wr941n-v7
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR941N-v7
     DEVICE_PROFILE := TLWR941
     TPLINK_HWID := 0x09410007
@@ -1013,7 +1013,7 @@ endef
 TARGET_DEVICES += tl-wr941nd-v2 tl-wr941nd-v3 tl-wr941nd-v4 tl-wr941nd-v5 tl-wr941nd-v6 tl-wr941nd-v6-cn tl-wr941n-v7
 
 define Device/tl-wr1041n-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WR1041N-v2
     DEVICE_PROFILE := TLWR1041
     TPLINK_HWID := 0x10410002
@@ -1061,14 +1061,14 @@ endef
 TARGET_DEVICES += tl-wdr4900-v2
 
 define Device/tl-wa701nd-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA901ND
     DEVICE_PROFILE := TLWA701
     TPLINK_HWID := 0x07010001
 endef
 
 define Device/tl-wa701nd-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA701ND-v2
     DEVICE_PROFILE := TLWA701
     TPLINK_HWID := 0x07010002
@@ -1076,21 +1076,21 @@ define Device/tl-wa701nd-v2
 endef
 
 define Device/tl-wa730re-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA901ND
     DEVICE_PROFILE := TLWA730RE
     TPLINK_HWID := 0x07300001
 endef
 
 define Device/tl-wa750re-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA750RE
     DEVICE_PROFILE := TLWA750
     TPLINK_HWID := 0x07500001
 endef
 
 define Device/tl-wa7510n
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA7510N
     DEVICE_PROFILE := TLWA7510
     TPLINK_HWID := 0x75100001
@@ -1098,49 +1098,49 @@ endef
 TARGET_DEVICES += tl-wa701nd-v1 tl-wa701nd-v2 tl-wa730re-v1 tl-wa750re-v1 tl-wa7510n
 
 define Device/tl-wa801nd-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA901ND
     DEVICE_PROFILE := TLWA801
     TPLINK_HWID := 0x08010001
 endef
 
 define Device/tl-wa801nd-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA801ND-v2
     DEVICE_PROFILE := TLWA801
     TPLINK_HWID := 0x08010002
 endef
 
 define Device/tl-wa801nd-v3
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA801ND-v3
     DEVICE_PROFILE := TLWA801
     TPLINK_HWID := 0x08010003
 endef
 
 define Device/tl-wa830re-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA901ND
     DEVICE_PROFILE := TLWA830
     TPLINK_HWID := 0x08300010
 endef
 
 define Device/tl-wa830re-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA830RE-v2
     DEVICE_PROFILE := TLWA830
     TPLINK_HWID := 0x08300002
 endef
 
 define Device/tl-wa850re-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA850RE
     DEVICE_PROFILE := TLWA850
     TPLINK_HWID := 0x08500001
 endef
 
 define Device/tl-wa860re-v1
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA860RE
     DEVICE_PROFILE := TLWA860
     TPLINK_HWID := 0x08600001
@@ -1148,28 +1148,28 @@ endef
 TARGET_DEVICES += tl-wa801nd-v1 tl-wa801nd-v2 tl-wa801nd-v3 tl-wa830re-v1 tl-wa830re-v2 tl-wa850re-v1 tl-wa860re-v1
 
 define Device/tl-wa901nd-v1
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA901ND
     DEVICE_PROFILE := TLWA901
     TPLINK_HWID := 0x09010001
 endef
 
 define Device/tl-wa901nd-v2
-    $(Device/tplink-4m)
+    $(Device/tplink-8m)
     BOARDNAME := TL-WA901ND-v2
     DEVICE_PROFILE := TLWA901
     TPLINK_HWID := 0x09010002
 endef
 
 define Device/tl-wa901nd-v3
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA901ND-v3
     DEVICE_PROFILE := TLWA901
     TPLINK_HWID := 0x09010003
 endef
 
 define Device/tl-wa901nd-v4
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA901ND-v4
     DEVICE_PROFILE := TLWA901
     TPLINK_HWID := 0x09010004
@@ -1178,7 +1178,7 @@ endef
 TARGET_DEVICES += tl-wa901nd-v1 tl-wa901nd-v2 tl-wa901nd-v3 tl-wa901nd-v4
 
 define Device/tl-wa7210n-v2
-    $(Device/tplink-4mlzma)
+    $(Device/tplink-8mlzma)
     BOARDNAME := TL-WA7210N-v2
     DEVICE_PROFILE := TLWA7210
     TPLINK_HWID := 0x72100002
@@ -1688,7 +1688,7 @@ dgl_5500_mtdlayout=mtdparts=spi0.0:192k(u-boot)ro,64k(nvram)ro,15296k(firmware),
 dlan_hotspot_mtdlayout=mtdparts=spi0.0:128k(u-boot)ro,64k(Config1)ro,64k(Config2)ro,7872k@0x40000(firmware),64k(art)ro
 dlan_pro_500_wp_mtdlayout=mtdparts=spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,64k(Config1)ro,64k(Config2)ro,7680k@0x70000(firmware),64k(art)ro
 dlan_pro_1200_ac_mtdlayout=mtdparts=spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,64k(Config1)ro,64k(Config2)ro,15872k@0x70000(firmware),64k(art)ro
-dw33d_mtdlayout=mtdparts=spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,14528k(rootfs),1472k(kernel),64k(art)ro,16000k@0x50000(firmware);ar934x-nfc:96m(rootfs_data),32m(backup)ro
+dw33d_mtdlayout=mtdparts=spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,14528k(rootfs),1472k(kernel),64k(art)ro,16000k@0x50000(firmware);ar934x-nfc:128m(rootfs_data)
 cameo_ap94_mtdlayout=mtdparts=spi0.0:256k(uboot)ro,64k(config)ro,6208k(firmware),64k(caldata)ro,1600k(unknown)ro,64k@0x7f0000(caldata_copy)
 cameo_ap94_mtdlayout_fat=mtdparts=spi0.0:256k(uboot)ro,64k(config)ro,7808k(firmware),64k(caldata)ro,64k@0x660000(caldata_orig),6208k@0x50000(firmware_orig)
 esr900_mtdlayout=mtdparts=spi0.0:192k(u-boot)ro,64k(u-boot-env)ro,1408k(kernel),13248k(rootfs),1024k(manufacture)ro,64k(backup)ro,320k(storage)ro,64k(caldata)ro,14656k@0x40000(firmware)
@@ -2493,7 +2493,7 @@ $(eval $(call SingleProfile,AthLzma,64k,WPJ558_16M,wpj558-16M,WPJ558,ttyS0,11520
 $(eval $(call SingleProfile,AthLzma,64k,YUN_8M,yun-8M,Yun,ttyATH0,250000,$$(yun_mtdlayout_8M),RKuImage))
 $(eval $(call SingleProfile,AthLzma,64k,YUN_16M,yun-16M,Yun,ttyATH0,250000,$$(yun_mtdlayout_16M),RKuImage))
 
-$(eval $(call SingleProfile,AthLzma,64k,DW33D,domywifi-dw33d,DW33D,ttyS0,115200,$$(dw33d_mtdlayout) norootfssplit,RKuImage))
+$(eval $(call SingleProfile,AthLzma,64k,DW33D,domywifi-dw33d,DW33D,ttyS0,115200,$$(dw33d_mtdlayout),RKuImage))
 
 $(eval $(call SingleProfile,Belkin,64k,F9K1115V2,f9k1115v2,F9K1115V2,ttyS0,115200,$$(f9k1115v2_mtdlayout),BR-6679BAC))
 
