@@ -1,8 +1,8 @@
-src-git packages https://github.com/hackpascal/packages.git
-src-git luci https://github.com/hackpascal/luci.git
+src-git packages https://github.com/ZSL2000/packages.git
+src-git luci https://github.com/ZSL2000/luci-1.git
 src-git routing https://github.com/openwrt-routing/packages.git
 src-git telephony https://github.com/openwrt/telephony.git
 src-git management https://github.com/openwrt-management/packages.git
 src-git targets https://github.com/openwrt/targets.git
-src-git oldpackages http://git.openwrt.org/packages.git
-src-link private /home/hackpascal/openwrt/openwrt-feeds
+#src-git oldpackages http://git.openwrt.org/packages.git
+#src-link custom /usr/src/openwrt/custom-feed
